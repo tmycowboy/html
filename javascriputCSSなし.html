@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptCSSなし宿題</title>
+</head>
+<body>
+    <h1>お問い合わせ</h1>
+        
+    <form name="form">
+        <label>名前</label><br>
+        <input type="text" name="name"><br><br>
+            
+        <label>メールアドレス</label><br>
+        <input type="email" name="mail"><br><br>
+            
+        <label>年齢</label><br>
+        <input type="radio" name="age" value="10">10代
+        <input type="radio" name="age" value="20">20代
+        <input type="radio" name="age" value="30">30代
+        <input type="radio" name="age" value="40">40代
+        <input type="radio" name="age" value="50">50代<br><br>
+            
+        <label>出身地</label><br>
+        <select name="birthplace">
+            <option value="none">指定なし</option>
+            <option value="hokaido">北海道</option>
+            <option value="tokyo">東京</option>
+            <option value="oosaka">大阪</option>
+        </select><br><br>
+            
+        <label>畿内で行ったところ（複数回答可）</label><br>
+        <input type="checkbox" name="travel" value="kyoto">京都
+        <input type="checkbox" name="travel" value="oosaka">大阪
+        <input type="checkbox" name="travel" value="hyogo">兵庫
+        <input type="checkbox" name="travel" value="siga">滋賀
+        <input type="checkbox" name="travel" value="nara">奈良
+        <input type="checkbox" name="travel" value="wakayama">和歌山
+        <input type="checkbox" name="travel" value="mie">三重<br><br>
+            
+            <label>お問い合わせフォーム</label><br>
+            <textarea name="contact" rows="8" cols="50">ここにご質問を記入してください</textarea><br><br>
+    </form>
+            
+        <button id="btn">送信</button>
+    <script>
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener("click", () => {
+            const Form = document.forms.form;
+            console.log(Form.name.value);
+            console.log(Form.mail.value);
+            console.log(Form.age.value);
+            console.log(Form.birthplace.value);
+            
+            Form.travel.forEach(area => {
+                if(area.checked) console.log(area.value);
+            })
+
+            console.log(Form.contact.value);
+        });
+    </script>
+</body>
+</html>

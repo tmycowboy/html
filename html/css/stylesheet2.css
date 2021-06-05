@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #333;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+/*--------wrapper---------*/
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background-color: burlywood;
+    top: 10px;
+    position: relative;
+}
+
+/*------header------*/
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#corridor {
+    width: 100%;
+    height: auto;
+}
+
+/*-----footer------*/
+
+footer {
+    width: 100%;
+    background-color:#39f;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*-----navi------*/
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+#navi {
+    width: 100%;
+}
+
+#navi ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+#navi ul li {
+    text-align: center;
+    width: 20%;
+}
+
+#navi ul li a {
+    display: block;
+    background-color: green;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+}
+
+/*-----main------*/
+#content {
+    display: flex;
+}
+
+#main {
+    float: left;
+    width: 70%;
+    background-color: wheat;
+}
+
+#main1 {
+    background-color: thistle;
+}
+
+.sbtitle {
+    background-color: #909090;
+}
+
+#img1 {
+    width: 40%;
+    height: auto;
+}
+
+#main2 {
+    background-color: turquoise;
+}
+
+#img2 {
+    width: 40%;
+    height: auto;
+}
+
+/*------said-------*/
+
+#said {
+    float: right;
+    width: 30%;
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+#saidmenu1 {
+    margin-bottom: 100px;
+}
+
+#said h2 {
+    text-align: center;
+    color: #fff;
+    background-image: url(../../images/side_box_h2.png);
+}
+
+#said ul {
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+#said ul li {
+    border-bottom: 1px solid;
+}
+
+#said ul li a {
+    font-size: 20px;
+    line-height: 50px;
+}

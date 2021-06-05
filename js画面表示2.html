@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS画面表示2</title>
+</head>
+<body>
+    <label>名前</label><br>
+    <input id="Name" type="text" name="name">
+
+    <br><br>
+
+    <button id="btn">送信</button>
+
+    <br><br>
+
+    <div id="p"></div>
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        const p = document.getElementById('p');
+        
+        btn.addEventListener('click', () => {
+            const text = document.createElement('span');
+            const Name = document.getElementById('Name').value;
+            console.log(Name.value);
+            text.textContent = Name;
+            console.log(text);
+            p.appendChild(text);
+        });
+    </script>
+</body>
+</html>

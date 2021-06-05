@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript画面表示</title>
+</head>
+<body>
+    <label>名前</label><br>
+    <input id="NAME" type="text" name="Name"><br><br>
+
+    <button id="btn">送信</button>
+
+    <br><br>
+
+    <div id="innerHTMLtxt"></div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const innerHTMLtxt = document.getElementById('innerHTMLtxt')
+        
+        btn.addEventListener('click', () => {
+            const NAME = document.getElementById('NAME');
+            
+            innerHTMLtxt.innerHTML = NAME.value;
+            //document.body.appendChild(NAME);
+        })
+    </script>
+</body>
+</html>
